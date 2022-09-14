@@ -1,15 +1,23 @@
 const init = function(){
   const inject = document.createElement("div");
   const button = document.createElement("button")
+  const maxButton = document.createElement("button")
 
   inject.id = "button-container"
   
   button.id = "hello"
   
+  maxButton.id = "max-button"
+
+  maxButton.innerHTML = "Max"
+  
   button.innerHTML = "Delete"
   
   inject.appendChild(button)
+  inject.appendChild(maxButton)
   inject.innerHTML += "<br /><input type='number' id='container-input' value='1' placeholder=''/><br />";
+
+  
   document.body.appendChild(inject)
 }
 init()
@@ -62,5 +70,13 @@ document.getElementById("hello").addEventListener("click", () => {
     }
     counter === inputValue && clearInterval(Interval)
   }, 100)
+
+})
+document.getElementById("max-button").addEventListener("click", () => {
+  const list = document.getElementsByTagName("ul")
+  const newList = list[list.length - 1].getElementsByTagName("li")
+
+  document.getElementById("container-input").value = newList[newList.length - 2].firstChild.innerText
+
 
 })
