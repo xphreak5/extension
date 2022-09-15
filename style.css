@@ -1,0 +1,52 @@
+/* Main menu */
+#menu-container {
+  width: 200px;
+}
+
+
+
+#delete-menu-item {
+  background-color: dimgrey;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+
+
+
+#delete-container {
+  height: 150px;
+  text-align: center;
+}
+
+#arrow-back {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+#delete {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#container-input {
+  text-align: center;
+  color: white;
+  background-color: #333;
+}
+
+#max-button {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  background-color: #333;
+  z-index: 99;
+  cursor: pointer;
+}
+

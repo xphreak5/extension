@@ -1,14 +1,22 @@
 {
-  "name": "Bulk Deleter",
-  "description": "Delete Them All",
+"name": "Bulk Deleter",
+"description": "Delete Them All",
   "version": "1.0",
-  "content_scripts": [
-    {
-      "matches": ["https://*.myikas.com/admin/product"],
-      "js": ["contentScript.js"],
-      "css": ["contentScript.css"],
-      "run_at": "document_end"
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
     }
-  ],
-  "manifest_version": 3
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
 }
