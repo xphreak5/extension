@@ -15,7 +15,11 @@ var Interval = setInterval(() => {
   var newDiv = document.getElementsByClassName("data-table-row")[1]
   if (newDiv) {
     document.getElementsByTagName("input")[1].click()
-    document.getElementsByTagName("div")[60].click()
+    var divArray = Array.from(document.getElementsByTagName("div")).slice(50, 65)
+
+    var filteredArray = divArray.filter(content => content.innerHTML === "Sil" || content.innerHTML === "Löschen" || content.innerHTML === "Delete")
+
+    filteredArray[0].click()
     
     var btnIndex = document.getElementsByTagName("div").length - 2
     
