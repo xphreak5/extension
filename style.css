@@ -1,9 +1,8 @@
 /* Main menu */
+
 #menu-container {
   width: 200px;
 }
-
-
 
 #delete-menu-item {
   background-color: dimgrey;
@@ -12,8 +11,15 @@
   cursor: pointer;
 }
 
+#theme-menu-item {
+  margin-top: 10px;
+  background-color: dimgrey;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
 
-
+/* Containers */
 
 #delete-container {
   height: 150px;
@@ -26,7 +32,9 @@
   margin-left: 0;
 }
 
-#delete {
+/* Delete container section */
+
+#delete-button {
   padding: 20px;
   margin-bottom: 10px;
   background-color: brown;
